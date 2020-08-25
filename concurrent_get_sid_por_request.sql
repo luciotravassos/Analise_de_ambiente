@@ -8,9 +8,8 @@ SELECT a.request_id, d.SID, d.serial#, d.osuser, d.process
    AND c.pid = b.oracle_process_id
    AND b.session_id = d.audsid
    /*opção variável ou fixo */
-   --AND a.request_id = 8132409
-   --fixo - Descomente a linha abaixo
-   AND a.request_id = 2214443
-  -- AND a.phase_code = 'R'
-/
+  AND a.request_id = 922840
+   --and d.sid = '225'
+   --AND a.phase_code = 'R'
+   --and c.spid = 922840
 
