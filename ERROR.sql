@@ -13,7 +13,7 @@ SELECT   SUBSTR (a.request_id, 1, 20) request_id,
      and a.phase_code = 'C'
      --    AND to_char(a.actual_completion_date, 'DD/MM/YYYY') = '24/08/2005'
     -- AND a.actual_completion_date < ((SELECT SYSDATE FROM DUAL)-1)
-    AND to_char(a.actual_completion_date, 'DD/MM/YYYY') = '13/02/2007'
-ORDER BY a.request_id DESC
-
+    AND to_char(a.actual_completion_date, 'DD/MM/YYYY') = '28/10/2008'
+--ORDER BY a.request_id DESC
+order by a.actual_completion_date desc
 

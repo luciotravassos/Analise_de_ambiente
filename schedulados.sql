@@ -17,6 +17,6 @@ SELECT PROGRAM_SHORT_NAME,
   FROM FND_CONC_REQ_SUMMARY_V
  WHERE PHASE_CODE = 'P'
    and (PHASE_CODE = 'P' AND STATUS_CODE IN ('I', 'Q'))
---and program_short_name like 'POCISO'
- and program like upper('%Liber%')
+--   and program_short_name like 'REQIMPORT'
+-- and program = 'NFF Automática Brasileira - Extensões TAM (Report Set)'
  order by REQUEST_ID DESC

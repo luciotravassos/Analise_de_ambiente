@@ -15,4 +15,4 @@ SELECT SUBSTR(b.SID, 1, 5) SID,
  WHERE (b.status IN ('ACTIVE', 'KILLED', 'INACTIVE') OR
        b.lockwait IS NOT NULL)
    AND b.paddr = a.addr
-   AND B.serial# = '5'
+   AND B.serial# = '7944'

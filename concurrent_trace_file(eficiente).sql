@@ -18,7 +18,7 @@ SELECT 'Request id: ' || request_id,
        v$parameter                     dbnm,
        apps.fnd_concurrent_programs_vl prog,
        apps.fnd_executables            execname
- where req.request_id = '&request'
+ where req.request_id = '5912996'
    and req.oracle_process_id = proc.spid(+)
    and proc.addr = ses.paddr(+)
    and dest.name = 'user_dump_dest'

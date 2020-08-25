@@ -10,10 +10,10 @@ SELECT   SUBSTR (a.request_id, 1, 20) request_id,
                ) tempo
     FROM apps.fnd_conc_req_summary_v a, apps.fnd_user b--, fnd_concurrent_requests c
    WHERE a.requested_by = b.user_id
-     AND a.phase_code = 'C'
+     --AND a.phase_code = 'C'
      --AND a.status_code ='E'
-    and a.program like  'Relatório de planejamento mínimo-máximo%'
-    --AND to_char(a.actual_completion_date, 'DD/MM/YYYY') = '03/03/2006'
+    and a.program like  ' NFF Automática Brasileira - Extensões TAM'
+    AND to_char(a.actual_completion_date, 'DD/MM/YYYY') = '18/07/2012'
 ORDER BY a.request_id DESC
 
 
